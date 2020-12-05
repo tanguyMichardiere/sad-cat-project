@@ -51,7 +51,7 @@ class _BodyState extends State<Body> {
                   onTap: () {
                     var snackBar = Scaffold.of(context).showSnackBar(
                       SnackBar(
-                        content: Text("Sharing image..."),
+                        content: Text('Sharing image...'),
                       ),
                     );
                     getApplicationDocumentsDirectory().then((directory) {
@@ -66,7 +66,7 @@ class _BodyState extends State<Body> {
                       } on FirebaseException catch (e) {
                         Scaffold.of(context).showSnackBar(
                           SnackBar(
-                            content: Text("Download failed, code: ${e.code}"),
+                            content: Text('Download failed, code: ${e.code}'),
                           ),
                         );
                       }

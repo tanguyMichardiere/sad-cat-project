@@ -10,7 +10,7 @@ import 'package:file_picker/file_picker.dart';
 import 'body.dart';
 import 'admin.dart';
 
-const ADMIN = true;
+const ADMIN = bool.fromEnvironment('admin');
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -111,14 +111,14 @@ class UploadButton extends StatelessWidget {
                   .then((_) {
                 Scaffold.of(context).showSnackBar(
                   SnackBar(
-                    content: Text("Upload success"),
+                    content: Text('Upload success'),
                   ),
                 );
               });
             } on FirebaseException catch (e) {
               Scaffold.of(context).showSnackBar(
                 SnackBar(
-                  content: Text("Upload failed, code: ${e.code}"),
+                  content: Text('Upload failed, code: ${e.code}'),
                 ),
               );
             }

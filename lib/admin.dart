@@ -95,14 +95,14 @@ class _AdminPanelState extends State<AdminPanel> {
                                 var deleting =
                                     Scaffold.of(context).showSnackBar(
                                   SnackBar(
-                                    content: Text("Deleting..."),
+                                    content: Text('Deleting...'),
                                   ),
                                 );
                                 _pending[index].delete().then((value) {
                                   deleting.close();
                                   Scaffold.of(context).showSnackBar(
                                     SnackBar(
-                                      content: Text("Done"),
+                                      content: Text('Done'),
                                     ),
                                   );
                                   setState(() {
@@ -121,7 +121,7 @@ class _AdminPanelState extends State<AdminPanel> {
                                 var validating =
                                     Scaffold.of(context).showSnackBar(
                                   SnackBar(
-                                    content: Text("Validating..."),
+                                    content: Text('Validating...'),
                                   ),
                                 );
                                 getApplicationDocumentsDirectory()
@@ -144,7 +144,7 @@ class _AdminPanelState extends State<AdminPanel> {
                                             validating.close();
                                             Scaffold.of(context).showSnackBar(
                                               SnackBar(
-                                                content: Text("Done"),
+                                                content: Text('Done'),
                                               ),
                                             );
                                             setState(() {
@@ -157,7 +157,7 @@ class _AdminPanelState extends State<AdminPanel> {
                                         Scaffold.of(context).showSnackBar(
                                           SnackBar(
                                             content: Text(
-                                              "Upload failed, code: ${e.code}",
+                                              'Upload failed, code: ${e.code}',
                                             ),
                                           ),
                                         );
@@ -167,7 +167,7 @@ class _AdminPanelState extends State<AdminPanel> {
                                     Scaffold.of(context).showSnackBar(
                                       SnackBar(
                                         content: Text(
-                                          "Download failed, code: ${e.code}",
+                                          'Download failed, code: ${e.code}',
                                         ),
                                       ),
                                     );
