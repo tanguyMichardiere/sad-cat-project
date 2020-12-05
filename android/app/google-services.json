@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "742846119536",
+    "firebase_url": "https://sad-cat-project.firebaseio.com",
+    "project_id": "sad-cat-project",
+    "storage_bucket": "sad-cat-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742846119536:android:e7ef86b28459808cc0feb5",
+        "android_client_info": {
+          "package_name": "com.tanguymichardiere.sad_cat_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742846119536-vn8cehcureuqc7ens8gtopje21muo4q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjB-1T1sJZ5sBVoaP8zOONatOPAAmNy8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742846119536-vn8cehcureuqc7ens8gtopje21muo4q3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
